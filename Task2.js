@@ -5,5 +5,8 @@ function MinMax(arr) {
   return [arr[0], arr[arr.length - 1]];
 }
 
-console.log(MinMax([2, 4, 1, 0, 2, -1]));
-console.log(MinMax([20, 50, 12, 6, 14, 8]));
+var userArr = prompt("Please input an array, for example 1,2,3,4,5 :");
+
+var Arr = userArr.split(",");
+
+console.log(MinMax(Arr));

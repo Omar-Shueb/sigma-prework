@@ -5,5 +5,6 @@ function DateGiver(date) {
   return difference;
 }
 
-console.log(DateGiver("1990-01-01"));
-console.log(DateGiver("1972-12-04"));
+var userDate = prompt("Please enter a date:");
+
+console.log(DateGiver(userDate));
