@@ -5,8 +5,8 @@ function MinMax(arr) {
   return [arr[0], arr[arr.length - 1]];
 }
 
-var userArr = prompt("Please input an array, for example 1,2,3,4,5 :");
+var userArr = prompt("Please input an array:");
 
-var Arr = userArr.split(",");
+var Arr = userArr.replace("[", "").replace("]", "").split(",");
 
 console.log(MinMax(Arr));
